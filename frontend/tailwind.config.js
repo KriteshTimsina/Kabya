@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       boxShadow:{
@@ -11,6 +12,10 @@ export default {
       },
       colors:{
         "secondary":"#ECEEEF"
+      },
+      fontFamily:{
+        "roboto":['Roboto', 'sans-serif'],
+        "sans":['Open Sans', 'sans-serif']
       }
     },
   },
