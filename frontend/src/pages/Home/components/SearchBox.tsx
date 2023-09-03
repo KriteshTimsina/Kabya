@@ -1,4 +1,3 @@
-import { FormEvent, useState } from "react";
 import { BiSearch } from "react-icons/bi";
 import ImageCarousel from "./ImageCarousel";
 
