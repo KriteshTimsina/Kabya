@@ -11,7 +11,8 @@ export default {
         "box":"rgba(0, 0, 0, 0.1) 0px 4px 12px;"
       },
       colors:{
-        "secondary":"#ECEEEF"
+        "secondary":"#ECEEEF",
+        "dark":"#053B50"
       },
       fontFamily:{
         "roboto":['Roboto', 'sans-serif'],
