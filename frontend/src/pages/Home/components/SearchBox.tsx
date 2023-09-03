@@ -3,18 +3,8 @@ import { BiSearch } from "react-icons/bi";
 import ImageCarousel from "./ImageCarousel";
 
 const SearchBox = () => {
-  const [loading, setLoading] = useState<boolean>(false);
-
-  const handleSearch = (e: FormEvent<HTMLFormElement>): void => {
-    e.preventDefault();
-    setLoading(true);
-    setTimeout(() => setLoading(false), 3000);
-  };
   return (
-    <form
-      onSubmit={handleSearch}
-      className="h-60 md:h-80 bg-secondary flex justify-center items-center"
-    >
+    <form className="h-60 md:h-80 bg-secondary flex justify-center items-center">
       <ImageCarousel className="relative" />
       <div className="z-10 absolute flex border-[1px] border-gray-400 rounded-md w-4/5 md:w-1/2">
         <select className="w-2/12  bg-gray-50 border-secondary rounded-none border outline-none  text-gray-900 text-sm  block  p-2.5 ">
