@@ -1,5 +1,6 @@
 import { FormEvent, useState } from "react";
 import { BiSearch } from "react-icons/bi";
+import ImageCarousel from "./ImageCarousel";
 
 const SearchBox = () => {
   const [loading, setLoading] = useState<boolean>(false);
@@ -12,22 +13,26 @@ const SearchBox = () => {
   return (
     <form
       onSubmit={handleSearch}
-      className="h-60 bg-secondary flex justify-center items-center "
+      className="h-60 md:h-80 bg-secondary flex justify-center items-center"
     >
-      <div className="flex border-[1px] border-gray-400 rounded-md w-4/5 md:w-1/2">
-        <select className="w-2/12 bg-gray-50 border-secondary border outline-none  text-gray-900 text-sm rounded-lg block  p-2.5 ">
+      <ImageCarousel className="relative" />
+      <div className="z-10 absolute flex border-[1px] border-gray-400 rounded-md w-4/5 md:w-1/2">
+        <select className="w-2/12  bg-gray-50 border-secondary rounded-none border outline-none  text-gray-900 text-sm  block  p-2.5 ">
           <option value="songs">Songs</option>
           <option value="lyrics">Lyrics</option>
           <option value="tracks">Tracks</option>
           <option value="albums">Albums</option>
         </select>
         <input
-          className="w-5/6 indent-2 relative border-none focus:outline-[1px]  focus:outline-blue-400"
+          className="w-5/6 indent-2 py-3 relative border-none focus:outline-[1px]  focus:outline-blue-400"
           type="text"
           placeholder="Search for Songs,Lyrics..."
         />
 
-        <button type="submit" className="px-5 hover:bg-blue-400">
+        <button
+          type="submit"
+          className="px-5 bg-white border-l-[1px] border-l-secondary hover:bg-blue-400"
+        >
           <BiSearch />
         </button>
       </div>
