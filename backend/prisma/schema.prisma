@@ -1,6 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -8,4 +5,20 @@ generator client {
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
+}
+
+model Song {
+  id          Int     @id @default(autoincrement())
+  track       String
+  artist_id   Int
+  youtube_url String?
+  duration    Float
+  lyrics      Json
+  artist      Artist  @relation(fields: [artist_id], references: [id])
+}
+
+model Artist {
+  id    Int    @id @default(autoincrement())
+  name  String
+  songs Song[]
 }
