@@ -4,11 +4,16 @@ import Albums from "./pages/Albums/Albums";
 import Navbar from "./components/navbar/Navbar";
 import { useAppSelector } from "./utils/hooks";
 import { selectTheme } from "./store/features/themeSlice";
+import Song from "./pages/Song/Song";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "song/:title",
+    element: <Song />,
   },
   {
     path: "albums",

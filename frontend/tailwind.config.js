@@ -7,6 +7,9 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
+      padding:{
+        "top":"80px"
+      },
       boxShadow:{
         "box":"rgba(0, 0, 0, 0.1) 0px 4px 12px;"
       },

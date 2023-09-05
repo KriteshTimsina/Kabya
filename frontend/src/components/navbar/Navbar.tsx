@@ -11,7 +11,7 @@ const Navbar = () => {
     dispatch(setDarkTheme(checked));
   };
   return (
-    <div className="flex justify-between items-center p-1 px-10 bg-white dark:bg-slate-800">
+    <div className="flex justify-between items-center p-1 px-10 bg-white dark:bg-slate-800 fixed left-0 right-0 z-20">
       <img src="/logo.png" alt="Kabya" width={120} />
       <div>
         <DarkModeSwitch checked={theme} onChange={toggleTheme} />
