@@ -1,11 +1,17 @@
 import { Router } from "express";
-import { addArtist, getAllArtists } from "../controllers/artist.controller";
+import {
+  addArtist,
+  deleteArtist,
+  getAllArtists,
+  updateArtist,
+} from "../controllers/artist.controller";
 
 const router = Router();
 
-
 //artist
-router.post("/",addArtist)
-router.get("/",getAllArtists)
+router.get("/", getAllArtists);
+router.post("/", addArtist);
+router.put("/:id", updateArtist);
+router.delete("/:id", deleteArtist);
 
 export default router;
