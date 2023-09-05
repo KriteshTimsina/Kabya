@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { AiOutlineFieldTime } from "react-icons/ai";
 import { BsInfoCircle } from "react-icons/bs";
 import { GiMicrophone } from "react-icons/gi";
