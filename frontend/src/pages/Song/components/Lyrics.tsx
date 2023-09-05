@@ -12,8 +12,8 @@ const Lyrics = ({ song }: any) => {
   };
 
   return (
-    <div className=" md:w-3/4 bg-purple-50 dark:bg-dark flex flex-col px-5 pt-5">
-      <div className=" flex flex-wrap w-full justify-evenly md:justify-start gap-2 md:gap-16">
+    <div className=" md:w-3/4 bg-purple-50 dark:bg-dark flex flex-col pl-10 p-1">
+      <div className="sticky top-[81px] bg-purple-50 z-10 flex flex-wrap w-full justify-evenly md:justify-start gap-2 md:gap-16">
         <div className="flex  items-center gap-2">
           <BsInfoCircle />
           <p>{song.track}</p>
@@ -31,7 +31,7 @@ const Lyrics = ({ song }: any) => {
           <button onClick={toggleSongLanguage}>
             Language:{" "}
             <span className="underline text-blue-500">
-              {isLyricsNepali ? "ENG" : "NEP"}
+              {isLyricsNepali ? "NEPALI" : "ENGLISH"}
             </span>
           </button>
         </div>
