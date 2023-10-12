@@ -1,18 +1,23 @@
-<br/>
-<p align="center">
-  <a href="https://kabya.netlify.app">
-    <img src="frontend/public/logo.png" alt="Logo" width="200">
-  </a>
+<div align="center" style="position: relative;">
+    <a href="https://kabya.netlify.app/">
+       <img width="200" alt="Kabya" src="frontend/public/logo.png">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: transparent;"></div>
+    </a>
+    <p style="font-family: Roboto, Calibri; font-size: 12pt; font-style: italic">Kabya - an Open-Source Music Dictionary</p>
+   <a href="https://github.com/kriteshTimsina/Kabya/forks">
+        <img alt="GitHub forks" src="https://img.shields.io/github/forks/kriteshTimsina/Kabya?color=orange">
+    </a>
+    <a href="https://github.com/kriteshTimsina/Kabya/stargazers">
+        <img alt="GitHub forks" src="https://img.shields.io/github/stars/kriteshTimsina/Kabya">
+    </a>
+</div>
 
-  <h3 align="center">Kabya - an Open-Source Music Dictionary</h3>
 
-  <p align="center">
+# [Kabya](https://kabya.netlify.app/)
+<p>
     Unlock the Poetry of Music: Your Ultimate Lyrics Destination!
-    <br/>
-    <br/>
   </p>
-</p>
-
+  
 ## Table Of Contents
 
 - [About the Project](#about-the-project)
@@ -23,10 +28,6 @@
 - [Contributing](#contributing)
 
 ## About The Project
-
-![Screen Shot]
-![image](https://github.com/KriteshTimsina/lyricsapp/assets/103115789/cea557cc-ca6c-46c4-95b7-640868a5c7e9)
-
 
 "Kabya: An Open Source Lyrics Library for Music Lovers. Dive into the world of music, explore your favorite songs, and uncover the stories behind the lyrics, all with Kabya's open-hearted dedication to the art of sound."
 
