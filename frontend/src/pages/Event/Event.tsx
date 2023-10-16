@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Wrapper } from "../../components/Wrapper";
 import EventCard from "./Components/EventCard";
 import Pagination from "./Components/Pagination";
