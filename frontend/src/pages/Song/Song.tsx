@@ -7,7 +7,7 @@ const Song = () => {
     state: { song },
   } = useLocation();
   return (
-    <div className="flex flex-col pt-top ">
+    <div className="flex flex-col pt-top dark:bg-dark">
       <div className="h-48 bg-red-200"></div>
       <div className="flex  flex-col md:flex-row ">
         <Lyrics {...{ song }} />

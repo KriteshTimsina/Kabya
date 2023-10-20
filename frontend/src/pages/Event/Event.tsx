@@ -21,7 +21,7 @@ const Event = () => {
   };
 
   return (
-    <Wrapper className="flex flex-col gap-5">
+    <Wrapper className="flex flex-col gap-5 dark:bg-dark dark:text-white">
       <div className="container mx-auto mt-5">
         <div>
           <h1 className="text-[32px] ">
