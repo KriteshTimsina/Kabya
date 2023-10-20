@@ -38,7 +38,7 @@ const Lyrics = ({ song }: any) => {
       </div>
       {song.lyrics ? (
         <div>
-          <pre className=" text-base md:text-lg font-sans whitespace-pre-line md:ml-16">
+          <pre className=" text-base md:text-lg font-sans whitespace-pre-line md:ml-16 dark:text-white">
             {isLyricsNepali ? lyrics?.NEP : lyrics?.ENG}
           </pre>
         </div>
