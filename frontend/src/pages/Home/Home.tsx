@@ -4,7 +4,7 @@ import SearchBox from "./components/SearchBox";
 
 const Home = () => {
   return (
-    <Wrapper className="flex flex-col gap-5">
+    <Wrapper className="flex flex-col">
       <SearchBox />
       <Charts />
     </Wrapper>

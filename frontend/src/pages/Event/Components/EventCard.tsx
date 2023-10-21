@@ -53,7 +53,7 @@ const EventCard: React.FC<EventCardProps> = ({
 
   <h2 className="text-xl font-semibold mt-2">{eventName}</h2>
   <hr />
-  <p className="text-gray-600 text-sm mt-2">{description}</p>
+  <p className="text-gray-600 text-sm mt-2 dark:text-[#D3D3D3]">{description}</p>
   <div className="ml-2 p-2">
     <div className="flex items-center mt-1 text-sm">
       <FaCalendar className="w-4 h-4 text-gray-600 mr-1" /> {date}
@@ -68,11 +68,11 @@ const EventCard: React.FC<EventCardProps> = ({
 
   <div className="mt-3">
     {isFree ? (
-      <button className="w-64 bg-blue-400 text-white py-1 px-2 rounded-md text-sm">
+      <button className="w-64 bg-blue-400 text-white py-1 px-2 rounded-md text-sm dark:text-black">
         Register
       </button>
     ) : (
-      <button className="w-64 bg-blue-400 z-10 text-white py-1 px-2 rounded-md text-sm">
+      <button className="w-64 bg-blue-400 z-10 text-white py-1 px-2 rounded-md text-sm dark:text-black">
         Buy a ticket
       </button>
     )}
